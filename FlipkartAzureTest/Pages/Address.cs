@@ -48,8 +48,8 @@ namespace FlipkartAzureTest.Pages
 
         public void AddressPage()
         {
-            Thread.Sleep(3000);
-            logo.Click();
+            /*Thread.Sleep(3000);
+            logo.Click();*/
         }
 
         public string validatePage()

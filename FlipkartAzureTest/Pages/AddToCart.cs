@@ -2,6 +2,7 @@
 {
     using OpenQA.Selenium;
     using SeleniumExtras.PageObjects;
+    using System.Threading;
 
     class AddToCart
     {
@@ -13,12 +14,13 @@
             PageFactory.InitElements(driver, this);
         }
 
-        [FindsBy(How = How.XPath, Using = "//body/div[@id='container']/div/div/div/div/div/div/ul/li/button[1]")]
+        [FindsBy(How = How.XPath, Using = "//body/div[@id='container']/div[1]/div[3]/div[1]/div[1]/div[2]/div[1]/ul[1]/li[1]/button[1]")]
         IWebElement addToCart { get; set; }
 
         public void AddToCartPage()
         {
-            addToCart.Click();
+           /* addToCart.Click();
+            Thread.Sleep(3000);*/
         }
 
         public string validatePage()

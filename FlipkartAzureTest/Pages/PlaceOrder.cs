@@ -18,7 +18,7 @@ namespace FlipkartAzureTest.Pages
             PageFactory.InitElements(driver,this);
         }
 
-        [FindsBy(How = How.XPath, Using = "//div[@id='container']//div//div//div//div//div//div//div//div//form//button")]
+        [FindsBy(How = How.XPath, Using = "//body/div[@id='container']/div/div/div/div/div/div/ul/li/button[1]")]
         IWebElement placeOrder { get; set; }
 
         [FindsBy(How = How.XPath, Using = "//span[contains(text(),'Order Summary')]")]
@@ -26,8 +26,8 @@ namespace FlipkartAzureTest.Pages
 
         public void PlaceOrderPage()
         {
-            Thread.Sleep(3000);
-            placeOrder.Click();
+           /* Thread.Sleep(3000);
+            placeOrder.Click();*/
         }
 
         public string validatePage()

@@ -38,6 +38,7 @@ namespace FlipkartAzureTest.Pages
             mobileNo.SendKeys(MobileNo);
             password.SendKeys(Password);
             loginBtn.Click();
+            Thread.Sleep(4000);
         }
 
         public string validatePage()

@@ -39,5 +39,12 @@
             Address address = new Address(driver);
             address.AddressPage();
         }
+
+        [Test, Order(5)]
+        public void LogoutTest()
+        {
+            Logout logout = new Logout(driver);
+            logout.LogoutPage();
+        }
     }
 }
