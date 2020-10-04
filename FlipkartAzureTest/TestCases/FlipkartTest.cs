@@ -11,5 +11,12 @@
             Login login = new Login(driver);
             login.LoginPage();
         }
+
+        [Test, Order(1)]
+        public void SearchProductTest()
+        {
+            SearchProduct search = new SearchProduct(driver);
+            search.SearchProductPage();
+        }
     }
 }
