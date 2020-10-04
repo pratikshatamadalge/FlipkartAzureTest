@@ -18,5 +18,12 @@
             SearchProduct search = new SearchProduct(driver);
             search.SearchProductPage();
         }
+
+        [Test, Order(2)]
+        public void AddToCartTest()
+        {
+            AddToCart cart = new AddToCart(driver);
+            cart.AddToCartPage();
+        }
     }
 }
