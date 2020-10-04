@@ -25,7 +25,7 @@
 
         public void SearchProductPage()
         {
-            searchBox.SendKeys("Iphone"+ Keys.Enter);
+            searchBox.SendKeys("Samsung M31"+ Keys.Enter);
             Thread.Sleep(3000);
             product.Click();
             Thread.Sleep(3000);

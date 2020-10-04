@@ -25,5 +25,12 @@
             AddToCart cart = new AddToCart(driver);
             cart.AddToCartPage();
         }
+
+        [Test, Order(3)]
+        public void PlaceOrderTest()
+        {
+            PlaceOrder order = new PlaceOrder(driver);
+            order.PlaceOrderPage();
+        }
     }
 }
