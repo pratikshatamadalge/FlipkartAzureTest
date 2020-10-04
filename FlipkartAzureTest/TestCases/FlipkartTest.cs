@@ -32,5 +32,12 @@
             PlaceOrder order = new PlaceOrder(driver);
             order.PlaceOrderPage();
         }
+
+        [Test, Order(4)]
+        public void AddressTest()
+        {
+            Address address = new Address(driver);
+            address.AddressPage();
+        }
     }
 }
