@@ -3,6 +3,7 @@ using OpenQA.Selenium;
 using NUnit.Framework;
 using NUnit.Framework.Interfaces;
 using FlipkartAzureTest;
+using OpenQA.Selenium.Firefox;
 
 namespace FlipkartAzureTest.BaseClass
 {
@@ -12,9 +13,10 @@ namespace FlipkartAzureTest.BaseClass
         [OneTimeSetUp]
         public void Initialization()
         {
-            ChromeOptions options = new ChromeOptions();
-            options.AddArguments("--incognito", "--start-maximized", "--disable-notifications", "--ignore-certificate-errors");
-            driver = new ChromeDriver(options);
+            //  ChromeOptions options = new ChromeOptions();
+            // options.AddArguments("--incognito", "--start-maximized", "--disable-notifications", "--ignore-certificate-errors");
+            // driver = new ChromeDriver(options);
+            driver = new FirefoxDriver();
             driver.Url = "https://www.flipkart.com/";
         }
 
