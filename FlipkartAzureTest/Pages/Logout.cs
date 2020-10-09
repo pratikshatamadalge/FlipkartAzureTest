@@ -30,8 +30,8 @@
             Thread.Sleep(4000);
             MyAccountDropdown.Click();
             Thread.Sleep(5000);
-            logoutBtn.Click();
-            Thread.Sleep(5000);
+            //logoutBtn.Click();
+            //Thread.Sleep(5000);
         }
     }
 }
